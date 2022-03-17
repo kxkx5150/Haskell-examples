@@ -1,0 +1,8 @@
+flags: {}
+packages:
+- '.'
+extra-deps:
+- tomato-rubato-openal-0.1.0.4
+- sdl2-2.3.0.1
+
+resolver: lts-8.19
