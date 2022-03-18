@@ -11,9 +11,10 @@ cmd.exe as Administrator
 pacman -Sy mingw-w64-x86_64-pkg-config mingw-w64-x86_64-SDL2 mingw-w64-x86_64-SDL2_ttf
 </pre>
 
-<br>
+<br><br><br>
 
 <pre>
+chcp 65001
 stack build
 stack exec -- hnes roms/tests/cpu/nestest/nestest.nes
 </pre>

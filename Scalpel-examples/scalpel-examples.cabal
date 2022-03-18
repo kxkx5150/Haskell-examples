@@ -1,0 +1,79 @@
+name:                scalpel-examples
+version:             0.1.0
+synopsis:            An example of how to use scalpel.
+description:         An example of how to use scalpel.
+homepage:            https://github.com/fimad/scalpel
+license:             Apache-2.0
+license-file:        ../LICENSE
+author:              Will Coster
+maintainer:          willcoster@gmail.com
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable complex-predicates
+  default-language: Haskell2010
+  main-is:          complex-predicates/Main.hs
+  build-depends:
+          base          >= 4.6 && < 5
+      ,   scalpel       >= 0.2.0
+  ghc-options: -W
+
+executable example-from-documentation
+  default-language: Haskell2010
+  main-is:          example-from-documentation/Main.hs
+  build-depends:
+          base          >= 4.6 && < 5
+      ,   scalpel       >= 0.2.0
+  ghc-options: -W
+
+executable generalized-repetition
+  default-language: Haskell2010
+  main-is:          generalized-repetition/Main.hs
+  build-depends:
+          base          >= 4.6 && < 5
+      ,   scalpel       >= 0.2.0
+  ghc-options: -W
+
+executable list-all-images
+  default-language: Haskell2010
+  main-is:          list-all-images/Main.hs
+  build-depends:
+          base          >= 4.6 && < 5
+      ,   scalpel       >= 0.2.0
+  ghc-options: -W
+
+executable custom-user-agent
+  default-language: Haskell2010
+  main-is:          custom-user-agent/Main.hs
+  build-depends:
+          base          >= 4.6 && < 5
+      ,   data-default
+      ,   http-client
+      ,   http-client-tls
+      ,   http-types
+      ,   scalpel
+  ghc-options: -W
+
+executable html-to-markdown
+  default-language: Haskell2010
+  main-is:          html-to-markdown/Main.hs
+  build-depends:
+          base          >= 4.6 && < 5
+      ,   text
+      ,   scalpel
+  ghc-options: -W
+
+executable image-sizes
+  default-language: Haskell2010
+  main-is:          image-sizes/Main.hs
+  build-depends:
+          base          >= 4.6 && < 5
+      ,   text
+      ,   bytestring
+      ,   http-client
+      ,   http-client-tls
+      ,   mtl
+      ,   network-uri
+      ,   scalpel
+  ghc-options: -W

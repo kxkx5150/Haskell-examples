@@ -3,6 +3,6 @@ packages:
 - '.'
 extra-deps:
 - tomato-rubato-openal-0.1.0.4
-- sdl2-2.3.0.1
+- sdl2-2.4.0
 
 resolver: lts-8.19
