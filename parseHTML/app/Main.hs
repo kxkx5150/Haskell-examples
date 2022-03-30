@@ -14,11 +14,13 @@ main = do
   let root = fromDocument doc
   let atags = getAtags root
   putStrLn $ show (length atags) ++ " elements."
-  mapM_ T.putStrLn $ atags >>= attribute "href"
+  printHref atag
 
 getAtags :: Cursor -> [Cursor]
 getAtags root = do
   cs <- descendant root
   element "a" cs
 
-
+printHref :: [Cursor] -> IO ()
+printHref cursors = do
+  mapM_ T.putStrLn $ cursors >>= attribute "href"
